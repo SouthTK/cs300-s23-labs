@@ -27,6 +27,7 @@ int length_list(node_t* head_list) {
   node_t* current = head_list;
   while (current) {
     len++;
+    current = current->next;
   }
   return len;
 }
